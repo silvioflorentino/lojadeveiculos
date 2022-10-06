@@ -1,6 +1,7 @@
-
-
+@extends('padrao')
+@section('content')
 <section>
+
 <form class="row g-3">
   <div class="col-md-6">
     <label for="inputEmail4" class="form-label">Email</label>
@@ -45,6 +46,6 @@
     <button type="submit" class="btn btn-primary">Sign in</button>
   </div>
 </form>
+
 </section>
-
-
+@endsection

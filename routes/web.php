@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-
+use App\Http\Controllers\CadastrarCaminhaoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,4 +18,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home',[HomeController::class,'mostrar']);
+Route::get('/home',[HomeController::class,'MostrarHome'])->name('home');
+Route::get('/editarCaminhao',[EditarCaminhaoController::class,'MostrarEditarCaminhao']);
+Route::get('/cadastrar-caminhao',[CadastrarCaminhaoController::class,'MostrarCadastroCaminhao']);
+
+
